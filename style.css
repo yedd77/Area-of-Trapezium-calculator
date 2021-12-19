@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background: linear-gradient(-40deg, #feac5e, #c779d0, #4BC0C8);
+    background-size: 500% 500%;
+    animation: gradient 15s ease infinite;
+    height: auto;
+    width: 100%;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.container{
+    background-color: #f8f9fa;
+    border-radius: 20px;
+    box-sizing: border-box;
+    height: auto;
+    padding: 20px;
+    width: 50%;
+    margin: 50px auto 50px auto; 
+    text-align: center;   
+}
+
+.container h1{
+    font-family: "roboto", sans-serif;
+    font-size: 30px;
+    font-weight: 450;
+    margin-bottom: 20px;
+}
+
+.container button{
+    background-color: #4BC0C8;
+    border: 1px solid #4BC0C8;
+    padding-left: 50%;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-family: "roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    outline: none;
+    outline: 0;
+    padding: 10px 25px;
+    text-align: center;
+    transform: translateY(0);
+    transition: transform 150ms, box-shadow 150ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    left: 67%;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.container button:hover{
+    box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
+    transform: translateY(-2px);
+}
+
+img{
+    padding-bottom: 20px;
+}
+
+p{
+    font-family: "roboto", sans-serif;
+}
+
+div#hide{
+    display: none;
+}
+
+#hide .container2{
+    border: 1px solid black;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 20px auto 20px auto;
+    width: 50%;
+    font-family: 'Roboto' , sans-serif;
+}
+

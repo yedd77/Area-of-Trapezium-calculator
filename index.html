@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="https://imgur.com/D0WDWI6.jpg">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <title>Lab Task 5</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>This page is to calculate area of trapezium</h1>
+        <button onclick="info()" value="Information">
+            Click here
+        </button>
+
+        <div id="hide">
+            <img src="https://imgur.com/ZOSm1T4.png?2" alt="Trapezium">
+            <p>Formula to calculate area of trapezium as show below:</p>
+
+            <div class="container2">
+                <h2>\(A = {{a+b}\over 2}h\)</h2><br>
+                <p>a = base</p><br>
+                <p>b = base</p><br>
+                <p>h = height</p>
+            </div>
+
+            <p>Lets try calculate using your data:</p>
+
+            <button type="button" onclick="calculate()">Insert the data</button>
+        </div>
+    </div>
+
+    <script>
+        function info() {
+            var content = document.getElementById("hide");
+            content.style.display = "block";
+            alert("Area of Trapezium");
+        }
+
+        function calculate() {
+            var basea;
+            var baseb;
+            var height;
+            var area;
+
+            basea = parseFloat(prompt("Enter the value for base a", "0"));
+            baseb = parseFloat(prompt("Enter the value for base b", "0"));
+            height = parseFloat(prompt("Enter the value for height", "0"));
+
+            area = ((basea + baseb) / 2) * height;
+            alert("The area of trapezium with the data you entered is " + area);
+        }
+    </script>
+</body>
+
+</html>
