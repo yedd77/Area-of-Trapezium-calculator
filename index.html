@@ -7,15 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="icon" href="https://imgur.com/D0WDWI6.jpg">
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <title>Lab Task 5</title>
+    <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script defer id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <title>Lab Task 4</title>
 </head>
 
 <body>
-    <div class="container">
-        <h1>This page is to calculate area of trapezium</h1>
-        <button onclick="info()" value="Information">
+    <div id="container">
+        <h1>
+            This page is to calculate area of trapezium
+        </h1>
+        <button id="btn1" onclick="info()" value="Information">
             Click here
         </button>
 
@@ -39,6 +41,9 @@
     <script>
         function info() {
             var content = document.getElementById("hide");
+            var container = document.getElementById("container")
+            
+            container.style.width = "50%"
             content.style.display = "block";
             alert("Area of Trapezium");
         }

@@ -26,25 +26,25 @@ body{
 	}
 }
 
-.container{
+#container{
     background-color: #f8f9fa;
     border-radius: 20px;
     box-sizing: border-box;
     height: auto;
     padding: 20px;
-    width: 50%;
+    width: 30%;
     margin: 50px auto 50px auto; 
     text-align: center;   
 }
 
-.container h1{
+#container h1{
     font-family: "roboto", sans-serif;
     font-size: 30px;
-    font-weight: 450;
+    font-weight: 400;
     margin-bottom: 20px;
 }
 
-.container button{
+#container button{
     background-color: #4BC0C8;
     border: 1px solid #4BC0C8;
     padding-left: 50%;
@@ -70,7 +70,7 @@ body{
     margin-top: 20px;
 }
 
-.container button:hover{
+#container button:hover{
     box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
     transform: translateY(-2px);
 }
